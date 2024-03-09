@@ -141,6 +141,27 @@ section .pantalla-bienvenida div a{
     align-self: center;
 }
 
+.section2-index{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.section-3{
+    background-color: #1A1A1A;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: center;
+}
+.section-3 .index-container-section-3{
+    width: 65%;
+}
+.section-3 .index-container-section-3 .text-container{
+    padding-top: 22vh;
+    padding-bottom: 22vh;
+}
+
     /*productos.html*/
 
 .h2-productos{
@@ -247,9 +268,58 @@ form div input{
     border-radius: 2px;
     font-size: 12px;
 }
+        /*equipo.html*/
+main .integrante-container{
+    /*background-image: url(./../img/cemet.gif);*/
+    background-color: #1A1A1A;
+    background-size: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+}
+main .integrante-container .integrante-card{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+}
+main .integrante-container .integrante-card img{
+    width: 200px;
+    border-radius: 50%;
+}
 
-
+main .integrante-container .integrante-card p{
+    margin: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    color: #f4f4f4;
+    text-align: center;
+}
+main .integrante-container .integrante-descripcion{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .integrante-container .integrante-descripcion p{
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    color: #f4f4f4;
+    text-align: justify;
+    display: inline;
+}
+.negrita{
+    font-weight: 550;
+}
+.integrante-container.marilina{
+    background-color: #72062c;
+}
         /*footer*/
 
 footer{
@@ -267,13 +337,13 @@ footer .footer-container{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    align-items: top;
 }
 
 footer .footer-container .redes a img{
-    width: 25px;
+    width: 35px;
 }
-.footer-texto{
+footer .footer-texto{
     font-family:"Roboto", sans-serif;
     color: white;
     font-size: 10px;
@@ -297,6 +367,11 @@ header nav ul{
 header nav ul li{
 margin-top: 3px;
 margin-bottom: 3px;
+}
+
+main .integrante-container{
+    flex-wrap: wrap;
+    height: auto;
 }
 
 footer .footer-container{
