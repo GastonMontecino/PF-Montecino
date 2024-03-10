@@ -164,25 +164,82 @@ section .pantalla-bienvenida div a{
 
     /*productos.html*/
 
-.h2-productos{
+.section-productos{
+    background-color: #e6004f;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.section-productos .prodcutos-container{
+    width: 65%;
+}
+.section-productos .prodcutos-container .productos{
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+.section-productos .prodcutos-container .productos .h2-productos{
     font-family: "Roboto", sans-serif;
     color: white;
-    background-color: #e6004f ;
     font-weight: 330;
     font-size: 40px;
-    text-align: center;
-
 }
-.h3-productos{
+.section-productos .prodcutos-container .productos .h3-productos{
     font-family: "Roboto", sans-serif;
     color: white;
-    background-color: #e6004f ;
     font-weight: 160;
     font-size: 24px;
-    text-align: center;
-
 }
 
+
+main .card-grande-container{
+    display: flex;
+    justify-content: center;
+}
+main .card-grande-container .card-grande{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    border: solid 0.5px #e6004f;
+    border-radius: 8px;
+}
+main .card-grande-container .card-grande .texto-card-grande{
+    font-family:"Roboto";
+    font-weight: 300;
+    padding: 80px;
+    color: #e6004f;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+main .card-grande-container .card-grande .texto-card-grande a{
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family:"Roboto";
+    font-weight: 300;
+    padding: 10px;
+    background-color: #e6004f;
+}
+main .card-grande-container .card-grande .texto-card-grande .h3-card{
+    color: #e6004f;
+    font-weight: 400;
+}
+
+
+main .card-grande-container .card-grande .imagen-card-grande{
+    width: 55%;
+}
+
+.card-grande .imagen-card-grande img{
+    border-radius :0 10px 10px 0px;
+}
 
 
 .container-cards{
@@ -201,6 +258,7 @@ section .pantalla-bienvenida div a{
     overflow: hidden;
     margin: 10px;
     text-align: center;
+    font-family: 'Roboto';
 }
 
 .container-cards .card:hover{
@@ -213,17 +271,19 @@ section .pantalla-bienvenida div a{
 }
 
 .container-cards .card h4{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1A1A1A;
+    font-size: 16px;
     font-weight: 700;
     margin-top: 5px;
 }
 .container-cards .card p{
-    padding: 16px;
+    padding: 18px;
+    font-size: 14px;
 }
 
 .container-cards .card a{
     text-decoration: none;
-
+    font-size: 14px;
 }
 
     /*contacto*/
@@ -294,7 +354,7 @@ main .integrante-container .integrante-card img{
 
 main .integrante-container .integrante-card p{
     margin: 5px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 12px;
     color: #f4f4f4;
     text-align: center;
@@ -308,7 +368,7 @@ main .integrante-container .integrante-descripcion{
 }
 main .integrante-container .integrante-descripcion p{
     margin: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 12px;
     color: #f4f4f4;
     text-align: justify;
@@ -320,10 +380,14 @@ main .integrante-container .integrante-descripcion p{
 .integrante-container.marilina{
     background-color: #72062c;
 }
+.integrante-container.berra{
+    background-color: #3e0419;
+}
         /*footer*/
 
 footer{
     background: #1A1A1A;
+    padding: 15px;
 }
 
 h4{
