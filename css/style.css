@@ -143,9 +143,11 @@ section .pantalla-bienvenida div a{
 
 .section2-index{
     width: 50%;
-    display: flex;
-    justify-content: center;
+    display: flex !important; /*no me lo toma no puedo centrar el carousel*/
+    flex-direction: row;
+    justify-content: center !important;
 }
+
 
 .section-3{
     background-color: #1A1A1A;
@@ -235,10 +237,12 @@ main .card-grande-container .card-grande .texto-card-grande .h3-card{
 
 main .card-grande-container .card-grande .imagen-card-grande{
     width: 55%;
+    overflow: hidden;
 }
 
 .card-grande .imagen-card-grande img{
     border-radius :0 10px 10px 0px;
+    
 }
 
 
@@ -387,6 +391,7 @@ main .integrante-container .integrante-descripcion p{
 
 footer{
     background: #1A1A1A;
+    border-top:solid 0.5px #929292;
     padding: 15px;
 }
 
@@ -433,6 +438,22 @@ margin-top: 3px;
 margin-bottom: 3px;
 }
 
+main .pantalla-bienvenida {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main .pantalla-bienvenida h1{
+    margin-bottom: 10px;
+}
+
+main .pantalla-bienvenida a{
+    margin: 5px;
+}
+
+main .pantalla-bienvenida div{
+    margin: 5px;
+}
 main .integrante-container{
     flex-wrap: wrap;
     height: auto;
@@ -441,6 +462,8 @@ main .integrante-container{
 footer .footer-container{
     display: flex;
     flex-direction: column;
+    justify-content:center;
+    align-items: center;
 }
 
 footer .footer-container .redes{
