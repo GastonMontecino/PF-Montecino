@@ -201,15 +201,17 @@ section .pantalla-bienvenida div a{
 main .card-grande-container{
     display: flex;
     justify-content: center;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 main .card-grande-container .card-grande{
-    width: 80%;
     display: flex;
     flex-direction: row;
     border: solid 0.5px #e6004f;
     border-radius: 8px;
 }
 main .card-grande-container .card-grande .texto-card-grande{
+    width: 55%;
     font-family:"Roboto";
     font-weight: 300;
     padding: 80px;
@@ -236,13 +238,15 @@ main .card-grande-container .card-grande .texto-card-grande .h3-card{
 
 
 main .card-grande-container .card-grande .imagen-card-grande{
-    width: 55%;
+    width: auto;
     overflow: hidden;
 }
 
 .card-grande .imagen-card-grande img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius :0 10px 10px 0px;
-    
 }
 
 
@@ -292,18 +296,31 @@ main .card-grande-container .card-grande .imagen-card-grande{
 
     /*contacto*/
 
+main .contacto-titulo{
+        background-color: #e6004f;
+        padding-left: 5%;
+        padding-right: 5%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        margin-bottom: 15px;
+}
+
+main .contacto-titulo .texto-generico{
+    font-family: "Roboto";
+    color: white;
+    font-weight: 330;
+    font-size: 20px;
+    text-align: center;
+}
+
 .forms-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-}
-
-.texto-generico{
-    color: #1A1A1A;
-    font-family: "Roboto", sans-serif;
-    text-align: center;
 
 }
 
@@ -454,6 +471,20 @@ main .pantalla-bienvenida a{
 main .pantalla-bienvenida div{
     margin: 5px;
 }
+
+main .card-grande-container .card-grande{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .card-grande-container .card-grande .texto-card-grande{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
 main .integrante-container{
     flex-wrap: wrap;
     height: auto;
