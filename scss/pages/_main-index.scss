@@ -1,0 +1,52 @@
+.main-index{
+    .section1-index{
+        background-color: #1A1A1A;
+        .pantalla-bienvenida{
+            position: relative;
+            height: 100vh; /* Ocupa el 100% del viewport */
+            background-image: url(./../img/bg-main-index2.jpg);
+            background-size: cover;
+            background-position: center;
+            display:grid;
+            grid-template-rows: 2fr 0.5fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            justify-content:center;
+            align-items:center;
+            a{
+                grid-column: 2/3;
+                grid-row: 2/3;
+                color: white;
+                width: 150px;
+                border: solid 1px ;
+                border-color: rgb(230, 0, 79);
+                border-radius: 5px;
+                text-decoration: none;
+                font-family:"Roboto";
+                font-weight: 500;
+                padding: 10px;
+                background-color: rgb(230, 0, 79);
+                text-align: center;
+                justify-self: center;
+
+            }
+            div{
+                grid-column: 2/3;
+            }
+        }
+    }
+    .section2-index{
+        width: 50%;
+        display: flex !important; /*no me lo toma no puedo centrar el carousel*/
+        flex-direction: row;
+        justify-content: center !important;
+    }
+    .section3{
+        .index-container-section3{
+            width: 65%;
+            .text-container{
+                padding-top: 22vh;
+                padding-bottom: 22vh;
+            }
+        }
+    }
+}

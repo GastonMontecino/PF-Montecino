@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHAGO - Laboratorio</title>
     <!--Link css-->
-    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="stylesheet" href="./../css/main.css">
+    <!--Link AOS animaciones-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -31,20 +33,57 @@
         </nav>
     </header>
     
-    <main>
-        <section class="section1-laboratorio">
-            <h2>Cartilla de exámenes</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, dolorum. Eligendi magni, dolorem fugiat culpa at soluta enim maiores perspiciatis tempore, labore molestiae quasi? Nostrum fugiat autem enim quisquam animi?</p>
+    <main class="main-laboratorio">
+        <section class="banner">
             <div>
-                <h3>BIOLOGÍA MOLECULAR</h3>
-                <Ul>
-                    <!--li*n-->
-                </Ul>
+                <h2>Todo ADN cuenta una historia. Descubri la tuya</h2>
             </div>
+        </section>
+        <section class="genomica">
+            <div class="genomica-container" data-aos="zoom-in">
+                <div class="img-container">
+                    <img src="./../img/esttructura-adn.avif" alt="estructura-adn">
+                </div>
+                <div class="texto-container">
+                    <h3>Predisposiciones genéticas</h3>
+                    <p>Descubrí tus predisposiciones para desarrolar ciertas enfermedades genéticas a tiempo. A partir de los resultados orientamos tu consulta médica para adoptar cuidados preventivos.</p>
+                    <a href="">Obtener turno</a>
+                </div>
+            </div>
+            <div class="genomica-container" data-aos="zoom-in">
+                <div class="texto-container">
+                    <h3>Paternidad</h3>
+                    <p>Descubri la relación genética con otras personas. Como una rama más para acercarte a tu identidad.</p>
+                    <a href="">Obtener turno</a>
+                </div>
+                <div class="img-container">
+                    <img src="./../img/abrazo-paterno.png" alt="abrazo-padrehijo">
+                </div>
+            </div>
+            <div class="genomica-container" data-aos="zoom-in">
+                <div class="img-container">
+                    <img src="./../img/esttructura-adn.avif" alt="estructura-adn">
+                </div>
+                <div class="texto-container">
+                    <h3>Test de nutrición</h3>
+                    <p>Mejorá tus hábitos a partir de tu genética. Vas a descurir como personlizar tu rutina alimentaria acorde a tus necesidades, deficits vitaminicos y tu vida cotidiana. De acuerdo a tu metabolismo, que ejercicios físicos funcionan mejor para tu cuerpo.</p>
+                    <a href="">Obtener turno</a>
+                </div>
+            </div>
+        </section>
+        <section class="banner">
             <div>
-                <h3>GENÓMICA</h3>
-                <ul>
-                    <!--li*n-->
+                <h2>Si tenés un laboratorio, te ofrecemos estas prestaciones.</h2>
+            </div>
+        </section>
+        <section class="prestaciones">
+            <div class="list-container">
+                <ul data-aos="flip-right">
+                    <li>Secuenciación por sanger</li>
+                    <li>Secuenciación NGS paneles customizados</li>
+                    <li>BCR::ABL cuantitativo</li>
+                    <li>Análisis bioinformático</li>
+                    <li>Análisis de variantes</li>
                 </ul>
             </div>
         </section>
@@ -73,6 +112,9 @@
 
         </div>
     </footer>
-  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>  
 </body>
 </html>

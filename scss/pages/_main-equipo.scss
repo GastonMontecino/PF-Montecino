@@ -1,0 +1,56 @@
+.main-equipo{
+    .integrante-container{
+        background-color: #1A1A1A;
+        background-size: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        height: 100vh;
+        .integrante-card{
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 200px;
+                border-radius: 50%;
+            }
+            .integrante-titulo{
+                p{
+                    margin: 5px;
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    font-size: 12px;
+                    color: #f4f4f4;
+                    text-align: center;
+                }
+            }
+        }
+        .integrante-descripcion{
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            p{
+                margin: 10px;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 12px;
+                color: #f4f4f4;
+                text-align: justify;
+                display: inline;
+            }
+            .negrita{
+                font-weight: 550;
+            }
+        }
+    }
+    .marilina{
+        background-color: #72062c;
+    }
+    .berra{
+        background-color: #3e0419;
+    }
+
+}

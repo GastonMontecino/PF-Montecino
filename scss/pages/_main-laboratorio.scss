@@ -1,0 +1,75 @@
+.main-laboratorio{
+    .banner{
+        div{
+            background-color: rgba(0, 0, 0, 0.199);
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h2{
+                color: $color-secundario;
+            }
+        }
+    }
+    .genomica{
+        padding-left: 200px;
+        padding-right: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .genomica-container{
+            margin: 15px;
+            width: 60vw;
+            display: flex;
+            flex-direction: row;
+            border-radius: 8px;
+            .img-container{
+                width: 50%;
+                overflow: hidden;
+                img{
+                 border-radius: 10px;
+                }
+            }
+            .texto-container{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                h3{
+                    color: $color-secundario
+                }
+                p{
+                    padding-left:25px;
+                    padding-right:25px;
+                    text-align: justify;
+                    font-family: $fuente-secundaria;
+                }
+                a{
+                    @extend %boton;
+                    font-weight: 400;
+                }
+
+            }
+        }
+    }
+    .prestaciones{
+        .list-container{
+            ul{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                li{
+                    list-style: none;
+                    font-family: $fuente-principal;
+                    font-weight: 300;
+                    padding: 15px;
+                    &:hover{
+                        background-color: $color-principal;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

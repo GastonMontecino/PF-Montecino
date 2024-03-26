@@ -1,0 +1,503 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 500;
+  font-size: 80px;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 160;
+  font-size: 40px;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Roboto";
+  color: white;
+  font-weight: 330;
+  font-size: 24px;
+  text-align: center;
+}
+
+h4 {
+  color: white;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.main-laboratorio .genomica .genomica-container .texto-container a {
+  color: white;
+  border: solid 1px;
+  border-color: rgb(230, 0, 79);
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: "Roboto";
+  font-weight: 500;
+  padding: 10px;
+  background-color: #e6004f;
+  justify-self: end;
+  align-self: center;
+}
+
+header nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+header nav a img {
+  width: 150px;
+  padding: 5px;
+}
+header nav .buscador-navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+}
+header nav .buscador-navbar input {
+  width: 200px;
+  height: 15px;
+  border: solid #929292 1px;
+  border-radius: 4px;
+}
+header nav ul {
+  list-style: none;
+  justify-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+}
+header nav ul li a {
+  color: #1A1A1A;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  padding: 7px;
+}
+header nav ul li a:hover {
+  color: rgb(230, 0, 79);
+  font-weight: 600;
+}
+
+.main-index .section1-index {
+  background-color: #1A1A1A;
+}
+.main-index .section1-index .pantalla-bienvenida {
+  position: relative;
+  height: 100vh; /* Ocupa el 100% del viewport */
+  background-image: url(./../img/bg-main-index2.jpg);
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-rows: 2fr 0.5fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.main-index .section1-index .pantalla-bienvenida a {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  color: white;
+  width: 150px;
+  border: solid 1px;
+  border-color: rgb(230, 0, 79);
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: "Roboto";
+  font-weight: 500;
+  padding: 10px;
+  background-color: rgb(230, 0, 79);
+  text-align: center;
+  justify-self: center;
+}
+.main-index .section1-index .pantalla-bienvenida div {
+  grid-column: 2/3;
+}
+.main-index .section2-index {
+  width: 50%;
+  display: flex !important; /*no me lo toma no puedo centrar el carousel*/
+  flex-direction: row;
+  justify-content: center !important;
+}
+.main-index .section3 .index-container-section3 {
+  width: 65%;
+}
+.main-index .section3 .index-container-section3 .text-container {
+  padding-top: 22vh;
+  padding-bottom: 22vh;
+}
+
+.main-productos .section-productos {
+  background-color: #e6004f;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.main-productos .section-productos .productos-container {
+  width: 65%;
+}
+.main-productos .section-productos .productos-container .productos {
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+.main-productos .section-productos .productos-container .productos .h2-productos {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 330;
+  font-size: 40px;
+}
+.main-productos .section-productos .productos-container .productos .h3-productos {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 160;
+  font-size: 24px;
+}
+.main-productos .card-grande-container {
+  display: flex;
+  justify-content: center;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+.main-productos .card-grande-container .card-grande {
+  display: flex;
+  flex-direction: row;
+  border: solid 0.5px #e6004f;
+  border-radius: 8px;
+}
+.main-productos .card-grande-container .card-grande .texto-card-grande {
+  width: 55%;
+  font-family: "Roboto";
+  font-weight: 300;
+  padding: 80px;
+  color: #e6004f;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+}
+.main-productos .card-grande-container .card-grande .texto-card-grande .h3-card {
+  color: #e6004f;
+  font-weight: 400;
+}
+.main-productos .card-grande-container .card-grande .texto-card-grande a {
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Roboto";
+  font-weight: 300;
+  padding: 10px;
+  background-color: #e6004f;
+}
+.main-productos .card-grande-container .card-grande .imagen-carde-grande {
+  width: auto;
+  overflow: hidden;
+}
+.main-productos .card-grande-container .card-grande .imagen-carde-grande img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 10px 10px 0px;
+}
+.main-productos .container-cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+.main-productos .container-cards .card {
+  width: 330px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.199);
+  overflow: hidden;
+  margin: 10px;
+  text-align: center;
+  font-family: "Roboto";
+}
+.main-productos .container-cards .card:hover {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.199);
+  transform: scale(1.1);
+  transition: 0.25s;
+}
+.main-productos .container-cards .card img {
+  width: 330px;
+}
+.main-productos .container-cards .card .h4-card {
+  color: #1A1A1A;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+.main-productos .container-cards .card p {
+  padding: 18px;
+  font-size: 14px;
+}
+.main-productos .container-cards .card a {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.main-equipo .integrante-container {
+  background-color: #1A1A1A;
+  background-size: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.main-equipo .integrante-container .integrante-card {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-equipo .integrante-container .integrante-card img {
+  width: 200px;
+  border-radius: 50%;
+}
+.main-equipo .integrante-container .integrante-card .integrante-titulo p {
+  margin: 5px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 12px;
+  color: #f4f4f4;
+  text-align: center;
+}
+.main-equipo .integrante-container .integrante-descripcion {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-equipo .integrante-container .integrante-descripcion p {
+  margin: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 12px;
+  color: #f4f4f4;
+  text-align: justify;
+  display: inline;
+}
+.main-equipo .integrante-container .integrante-descripcion .negrita {
+  font-weight: 550;
+}
+.main-equipo .marilina {
+  background-color: #72062c;
+}
+.main-equipo .berra {
+  background-color: #3e0419;
+}
+
+.main-contacto .contacto-titulo {
+  background-color: #e6004f;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  margin-bottom: 15px;
+}
+.main-contacto .contacto-titulo .texto-generico {
+  font-family: "Roboto";
+  color: white;
+  font-weight: 330;
+  font-size: 20px;
+  text-align: center;
+}
+.main-contacto .forms-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-contacto .forms-container form {
+  width: 400px;
+  margin: 15px;
+  border: solid 1px #f4f4f4;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+.main-contacto .forms-container form .contacto.container {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-contacto .forms-container form .contacto.container input {
+  width: 250px;
+  color: #1A1A1A;
+  border: #929292 solid 0.25px;
+  border-radius: 2px;
+  font-size: 12px;
+}
+
+.main-laboratorio .banner div {
+  background-color: rgba(0, 0, 0, 0.199);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-laboratorio .banner div h2 {
+  color: #1A1A1A;
+}
+.main-laboratorio .genomica {
+  padding-left: 200px;
+  padding-right: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-laboratorio .genomica .genomica-container {
+  margin: 15px;
+  width: 60vw;
+  display: flex;
+  flex-direction: row;
+  border-radius: 8px;
+}
+.main-laboratorio .genomica .genomica-container .img-container {
+  width: 50%;
+  overflow: hidden;
+}
+.main-laboratorio .genomica .genomica-container .img-container img {
+  border-radius: 10px;
+}
+.main-laboratorio .genomica .genomica-container .texto-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.main-laboratorio .genomica .genomica-container .texto-container h3 {
+  color: #1A1A1A;
+}
+.main-laboratorio .genomica .genomica-container .texto-container p {
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: justify;
+  font-family: "Montserrat", sans-serif;
+}
+.main-laboratorio .genomica .genomica-container .texto-container a {
+  font-weight: 400;
+}
+.main-laboratorio .prestaciones .list-container ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-laboratorio .prestaciones .list-container ul li {
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding: 15px;
+}
+.main-laboratorio .prestaciones .list-container ul li:hover {
+  background-color: rgb(230, 0, 79);
+  color: white;
+}
+
+footer {
+  background: #1A1A1A;
+  border-top: solid 0.5px #929292;
+  padding: 15px;
+}
+footer .footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: top;
+}
+footer .footer-container .redes a img {
+  width: 35px;
+}
+footer .footer-container .ubicacion .footer-texto {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  header nav ul li {
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+  .main-index .section1-index .pantalla-bienvenida {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-index .section1-index .pantalla-bienvenida h1 {
+    margin-bottom: 10px;
+  }
+  .main-index .section1-index .pantalla-bienvenida a {
+    margin: 5px;
+  }
+  .main-index .section1-index .pantalla-bienvenida div {
+    margin: 5px;
+  }
+  .main-productos .card-grande-container .card-grande {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-productos .card-grande-container .card-grande .texto-card-grande {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+  }
+  .main-equipo .integrante-container {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  footer .footer-container .redes {
+    margin: 1px;
+  }
+  footer .footer-container .ubicacion {
+    margin: 15px;
+  }
+  footer .footer-container .copyright {
+    margin: 15px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

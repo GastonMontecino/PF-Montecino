@@ -1,0 +1,49 @@
+.main-contacto{
+    .contacto-titulo{
+        background-color: #e6004f;
+        padding-left: 5%;
+        padding-right: 5%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        margin-bottom: 15px;
+        .texto-generico{
+            font-family: "Roboto";
+            color: white;
+            font-weight: 330;
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+    .forms-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        form{
+            width: 400px;
+            margin: 15px;
+            border: solid 1px #f4f4f4;
+            border-radius: 5px;
+            font-family: "Roboto", sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            .contacto.container{
+                margin: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                input{
+                    width: 250px;
+                    color: #1A1A1A;
+                    border: #929292 solid 0.25px;
+                    border-radius: 2px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

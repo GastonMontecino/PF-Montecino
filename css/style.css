@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
             /*Reset*/
-*{
+/**{
     margin:0;
     padding: 0;
     box-sizing: border-box;    
 }
 
             /*header*/
-header nav{
+/*header nav{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items:center;
@@ -56,21 +56,21 @@ header nav ul li a:hover{
     color: rgb(230, 0, 79);
     font-weight: 600;
 }
-
+*/
 
 
 
             /*Main*/
         /*Index.html*/
 
-.section1-index{
+/*.section1-index{
         background-color: #1A1A1A;
 }
 
 .pantalla-bienvenida {
     position: relative;
     height: 100vh; /* Ocupa el 100% del viewport */
-    background-image: url(./../img/bg-main-index2.jpg);
+ /*   background-image: url(./../img/bg-main-index2.jpg);
     background-size: cover;
     background-position: center;
     display:grid;
@@ -79,7 +79,7 @@ header nav ul li a:hover{
     justify-content:center;
     align-items:center;
   }
-  
+
 h1{
     font-family: "Roboto", sans-serif;
     color: white;
@@ -126,7 +126,7 @@ h3{
     font-size: 24px;
     text-align: center;
 }
-
+*/
 section .pantalla-bienvenida div a{
     color: white;
     border: solid 1px ;
@@ -140,11 +140,11 @@ section .pantalla-bienvenida div a{
     justify-self:end;
     align-self: center;
 }
-
+/*
 .section2-index{
     width: 50%;
     display: flex !important; /*no me lo toma no puedo centrar el carousel*/
-    flex-direction: row;
+/*    flex-direction: row;
     justify-content: center !important;
 }
 
@@ -163,9 +163,9 @@ section .pantalla-bienvenida div a{
     padding-top: 22vh;
     padding-bottom: 22vh;
 }
-
+*/
     /*productos.html*/
-
+/*
 .section-productos{
     background-color: #e6004f;
     padding-left: 5%;
@@ -196,9 +196,9 @@ section .pantalla-bienvenida div a{
     font-weight: 160;
     font-size: 24px;
 }
+*/
 
-
-main .card-grande-container{
+/*main .card-grande-container{
     display: flex;
     justify-content: center;
     padding-left: 150px;
@@ -249,7 +249,6 @@ main .card-grande-container .card-grande .imagen-card-grande{
     border-radius :0 10px 10px 0px;
 }
 
-
 .container-cards{
     width: 100%;
     display: flex;
@@ -278,7 +277,7 @@ main .card-grande-container .card-grande .imagen-card-grande{
     width: 330px;
 }
 
-.container-cards .card h4{
+.container-cards .card .h4-card{
     color: #1A1A1A;
     font-size: 16px;
     font-weight: 700;
@@ -293,10 +292,10 @@ main .card-grande-container .card-grande .imagen-card-grande{
     text-decoration: none;
     font-size: 14px;
 }
-
+*/
     /*contacto*/
 
-main .contacto-titulo{
+/*.main-contacto .contacto-titulo{
         background-color: #e6004f;
         padding-left: 5%;
         padding-right: 5%;
@@ -348,11 +347,11 @@ form div input{
     border: #929292 solid 0.25px;
     border-radius: 2px;
     font-size: 12px;
-}
+}*/
         /*equipo.html*/
-main .integrante-container{
+/*main .integrante-container{
     /*background-image: url(./../img/cemet.gif);*/
-    background-color: #1A1A1A;
+/*    background-color: #1A1A1A;
     background-size: 100vw;
     display: flex;
     flex-direction: row;
@@ -403,16 +402,16 @@ main .integrante-container .integrante-descripcion p{
 }
 .integrante-container.berra{
     background-color: #3e0419;
-}
+}*/
         /*footer*/
-
+/*
 footer{
     background: #1A1A1A;
     border-top:solid 0.5px #929292;
     padding: 15px;
 }
 
-h4{
+/*h4{
     color: white;
     font-size: 12px;
     font-family: "Roboto", sans-serif;
@@ -434,9 +433,9 @@ footer .footer-texto{
     color: white;
     font-size: 10px;
 }
-
+*/
 /*media queries*/
-@media screen and (max-width: 767px) {
+/*@media screen and (max-width: 767px) {
 header nav{
     display: flex;
     flex-direction: column;
@@ -508,4 +507,5 @@ footer .footer-container .ubicacion{
 footer .footer-container .copyright{
     margin: 15px;
 }
-  }
+}
+*/
