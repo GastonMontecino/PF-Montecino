@@ -8,7 +8,9 @@
     <!--Link de bootstrap-->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!--Link css-->
-    <link rel="stylesheet" href="./css/main.css">    
+    <link rel="stylesheet" href="./css/main.css">
+    <!--Link animacion AOS--> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">   
 </head>
 <body>
     <header>
@@ -22,7 +24,7 @@
                 <li>
                     <a href="./index.html">Inicio</a>
                 </li>
-                <li><a href="./html/laboratorio.html">Laboratorio Genómica</a>
+                <li><a href="./html/laboratorio.html">Laboratorio</a>
                 </li>
                 <li><a href="./html/productos.html">Productos</a>
                 </li>
@@ -44,52 +46,70 @@
                     <h2>Una empresa de tecnología de Salud</h2>
                     <h3>Liderando la revolución genómica y la medicina de precisión</h3>
                 </div>    
-            
+             </div>  
+        </section>
+        
+        <section class="banner-1">
+            <div class="banner-container" data-aos="fade-right">
+                <div class="text-container">
+                    <h3>Optimiza tus procesos, gestiona datos y potencia tus investigaciones con nuestras soluciones tecnológicas.</h3>
+                    <p>Descubrí nuestra suite de software para laboratorios </p>
+                    <a href="./html/productos.html">Ver productos</a>
+                </div>
             </div>
-            
         </section>
 
-        <section class="section2-index d-flex justify-content-center"> <!--Corregir tamaño img iguales y no puedo centrar carousel-->
-            <div class="carousel-container">
-                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active w-100">
-                            <img src="./img/premio.png" class="d-block w-100" alt="premiojornadas">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item w-100">
-                            <img src="./img/cemet.gif" class="d-block w-100" alt="centrocmet">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item w-100">
-                            <img src="./img/bg-main-index.jpg" class="d-block w-100" alt="imagenprovisoria">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>    
-        </section>
-        <section class="section-3">
-            <div class="index-container-section-3">
+        <section class="banner-2">
+            <div class="banner2-container" data-aos="fade-left">
                 <div class="text-container">
-                    <h3>Somos una empresa comprometida con el campo tecnologico de la medicina de precision. Trabajamos para pacientes ofreciendo los testeos de mejor calidad y para Laboratorios diseñando las mejores herramientas informaticas para la gestion de la informacion. El objetivo final: tu Salud</h3>
+                    <a class="enlace-equipo" href="">Conocé a nuestro equipo</a>
+                    <h3>Unidos por la innovación y la excelencia</h3>
+                    <p>Nuestro objtevio: contribuir con la mejora en tu <span>SALUD</span></p>
+                </div>
+                <div class="carousel">
+                    <div class="carousel-container">
+                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active w-100">
+                                    <img src="./img/premio.png" class="d-block w-100" alt="integrantes-recibiendo-premio">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Premio "Mejor trabajo en Medicina traslacional"</h5>
+                                        <p>El equipo fue distinguido en las ultimas jornadas científicas.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item w-100">
+                                    <img src="./img/cemet.gif" class="d-block w-100" alt="tomas-del-personal-pipeteando">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Altamente calificado</h5>
+                                        <p>El personal con el mejor desempeño tecnico y experiencia.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item w-100">
+                                    <img src="./img/mujer-programando.webp" class="d-block w-100" alt="mujer-desarrollando-software">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Biotecnolgía y computación</h5>
+                                        <p>Cada integrante combina sus conocimientos biológicos y computacionales.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>    
+                </div>                
+            </div>
+        </section>
+
+        <section class="banner-3">
+            <div class="banner-container" data-aos="zoom-in-up">
+                <div class="text-container">
+                    <h3>Somos una empresa comprometida con el campo tecnologico de la medicina de precision. Trabajamos para pacientes ofreciendo los testeos de mejor calidad y para Laboratorios diseñando las mejores herramientas informaticas para la gestion de la informacion.</h3>
                 </div>
             </div>
         </section>
@@ -121,5 +141,10 @@
 
     <!-- script de bootrsap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--scrip AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>  
 </body>
 </html>

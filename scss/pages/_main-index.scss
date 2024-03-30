@@ -34,18 +34,89 @@
             }
         }
     }
-    .section2-index{
-        width: 50%;
-        display: flex !important; /*no me lo toma no puedo centrar el carousel*/
-        flex-direction: row;
-        justify-content: center !important;
-    }
-    .section3{
-        .index-container-section3{
-            width: 65%;
+
+    .banner-1{
+        background-color: $color-secundario;
+        padding: 50px 0;
+        padding-top: 22vh ;
+        padding-bottom: 22vh ;
+        .banner-container{
+            max-width: 800px;
+            margin: 0 auto;
             .text-container{
-                padding-top: 22vh;
-                padding-bottom: 22vh;
+                @include flex(column, center, center);
+                h3{
+                    font-size: 2.5rem;
+                    color: white;
+                }
+                p{
+                    font-size: 1.2rem;
+                    color:white;
+                    font-family: $fuente-secundaria;
+                }
+                a{
+                   @extend %boton;
+                   &:hover{
+                        background-color: white;
+                        color: $color-principal;
+                        transition: 0.4s;
+                   } 
+                }
+            }
+        }
+
+    }
+    .banner-2{
+        background-color: $color-secundario;
+        padding: 50px 0;
+        padding-top: 22vh ;
+        padding-bottom: 22vh;
+        .banner2-container{
+            width: 80vw;
+            margin: 0 auto;
+            @include flex(row, center, space-evenly);
+            .text-container{
+                @include flex(column, center, center);
+                text-align: center;
+                a{
+                    color: $color-principal;
+                    text-decoration: none;
+                    font-size: 2.5rem;
+                    &:hover{
+                        color: white;
+                        text-decoration: underline;
+                        transition: 0.4s;
+                    }
+                }
+                h3{
+                    font-size: 2.5rem;
+                }
+                p{
+                    color: white;
+                    font-family: $fuente-secundaria;
+                    span{
+                        font-weight: 700;
+                    }
+                }
+            }
+            .carousel{
+                .carousel-container{
+                    width: 550px;             
+                }
+            }
+        }
+    }
+    .banner-3{
+        background-color: $color-secundario;
+        padding-top: 11vh;
+        padding-bottom: 22vh;
+        .banner-container{
+            max-width: 800px;
+            margin: 0 auto;
+            .text-container{
+                h3{
+                    font-style: italic;
+                }
             }
         }
     }

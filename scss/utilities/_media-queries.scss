@@ -32,6 +32,11 @@
                 }
             }
         }
+        .banner-2{
+            .banner2-container{
+            @include flex(column, center, center);
+            }
+        }
     }
     .main-productos{
         .card-grande-container{
@@ -45,6 +50,15 @@
                     padding: 10px;
                     text-align: center;
                 }
+            }
+        }
+    }
+    .main-laboratorio{
+        .genomica{
+            padding: 0px;
+            .genomica-container{
+                @include flex(column, center, center);
+                width:fit-content;
             }
         }
     }

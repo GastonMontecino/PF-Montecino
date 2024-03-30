@@ -20,7 +20,7 @@
             .integrante-titulo{
                 p{
                     margin: 5px;
-                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    font-family: $fuente-secundaria;
                     font-size: 12px;
                     color: #f4f4f4;
                     text-align: center;
@@ -35,14 +35,14 @@
             align-items: center;
             p{
                 margin: 10px;
-                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-family:$fuente-secundaria;
                 font-size: 12px;
                 color: #f4f4f4;
                 text-align: justify;
                 display: inline;
             }
             .negrita{
-                font-weight: 550;
+                font-weight: 700;
             }
         }
     }
