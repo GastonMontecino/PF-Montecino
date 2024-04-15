@@ -1,5 +1,5 @@
 .main-contacto{
-    .contacto-titulo{
+    .contacto-banner{
         background-color: #e6004f;
         padding-left: 5%;
         padding-right: 5%;
@@ -28,20 +28,19 @@
             border: solid 1px #f4f4f4;
             border-radius: 5px;
             font-family: "Roboto", sans-serif;
-            font-size: 12px;
+            font-size: 14px;
             font-weight: 400;
-            .contacto.container{
+            .contacto-container{
                 margin: 10px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                @include flex(column, center, center);
                 input{
-                    width: 250px;
+                    width: 300px;
+                    height: 25px;
                     color: #1A1A1A;
                     border: #929292 solid 0.25px;
                     border-radius: 2px;
                     font-size: 12px;
+                    margin-top: 5px;
                 }
             }
         }

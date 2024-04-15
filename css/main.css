@@ -40,7 +40,7 @@ h4 {
   font-weight: 300;
 }
 
-.main-laboratorio .genomica .genomica-container .texto-container a, .main-index .banner-1 .banner-container .text-container a {
+.main-laboratorio .pacientes .servicio-container .servicio .contenido-container a, .main-index .banner-1 .banner-container .text-container a {
   color: white;
   border: solid 1px;
   border-color: rgb(230, 0, 79);
@@ -409,7 +409,7 @@ header nav ul li a:hover {
   background-color: #3e0419;
 }
 
-.main-contacto .contacto-titulo {
+.main-contacto .contacto-banner {
   background-color: #e6004f;
   padding-left: 5%;
   padding-right: 5%;
@@ -420,7 +420,7 @@ header nav ul li a:hover {
   align-items: end;
   margin-bottom: 15px;
 }
-.main-contacto .contacto-titulo .texto-generico {
+.main-contacto .contacto-banner .texto-generico {
   font-family: "Roboto";
   color: white;
   font-weight: 330;
@@ -439,72 +439,100 @@ header nav ul li a:hover {
   border: solid 1px #f4f4f4;
   border-radius: 5px;
   font-family: "Roboto", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
 }
-.main-contacto .forms-container form .contacto.container {
+.main-contacto .forms-container form .contacto-container {
   margin: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
-.main-contacto .forms-container form .contacto.container input {
-  width: 250px;
+.main-contacto .forms-container form .contacto-container input {
+  width: 300px;
+  height: 25px;
   color: #1A1A1A;
   border: #929292 solid 0.25px;
   border-radius: 2px;
   font-size: 12px;
+  margin-top: 5px;
 }
 
-.main-laboratorio .banner div {
-  background-color: rgba(0, 0, 0, 0.199);
-  height: 100px;
+.main-laboratorio .banner-labo div {
+  background-color: #1A1A1A;
+  padding: 50px 0;
+  padding-top: 22vh;
+  padding-bottom: 22vh;
+}
+.main-laboratorio .banner-labo div h2 {
+  color: white;
+}
+.main-laboratorio .pacientes {
+  background-color: #1A1A1A;
+}
+.main-laboratorio .pacientes .servicio-container {
+  padding: 50px 0;
+  padding-top: 11vh;
+  padding-bottom: 11vh;
+}
+.main-laboratorio .pacientes .servicio-container .servicio {
+  width: 50%;
+  padding-left: 11vw;
+  padding-right: 11vw;
+  margin: 0 auto;
+  display: flex;
+}
+.main-laboratorio .pacientes .servicio-container .servicio .contenido-container {
+  background-image: linear-gradient(90deg, #fff 0, rgba(255, 255, 255, 0.281) 60%), url(./../img/abrazo-paterno.png);
+  background-size: cover;
+  height: 44vh;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.main-laboratorio .pacientes .servicio-container .servicio .contenido-container h3 {
+  font-weight: 400;
+}
+.main-laboratorio .pacientes .servicio-container .servicio .contenido-container p {
+  font-family: "Open Sans", sans-serif;
+  text-align: justify;
+  font-weight: 600;
+}
+.main-laboratorio .pacientes .servicio-container .servicio .contenido-container a:hover {
+  background-color: white;
+  color: rgb(230, 0, 79);
+  transition: 0.4s;
+}
+.main-laboratorio .pacientes .servicio-container .servicio .cancer {
+  background-image: linear-gradient(90deg, #fff 0, rgba(255, 255, 255, 0.479) 50%), url(./../img/secuencia-bases.png);
+}
+.main-laboratorio .pacientes .servicio-container .servicio .nutricion {
+  background-image: linear-gradient(90deg, #fff 0, rgba(255, 255, 255, 0.281) 60%), url(./../img/comida-sana.jpg);
+}
+.main-laboratorio .banner2-labo {
+  padding-top: 11vh;
+  padding-bottom: 11vh;
+}
+.main-laboratorio .banner2-labo div {
+  padding-right: 200px;
+  padding-left: 200px;
+}
+.main-laboratorio .banner2-labo div div {
+  background-color: rgb(230, 0, 79);
+  min-height: 100px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.199);
 }
-.main-laboratorio .banner div h2 {
-  color: #1A1A1A;
+.main-laboratorio .banner2-labo div div h2 {
+  padding: 50px;
+  font-weight: 350;
 }
-.main-laboratorio .genomica {
-  padding-left: 200px;
-  padding-right: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.main-laboratorio .genomica .genomica-container {
-  margin: 15px;
-  width: 60vw;
-  display: flex;
-  flex-direction: row;
-  border-radius: 8px;
-}
-.main-laboratorio .genomica .genomica-container .img-container {
-  width: 50%;
-  overflow: hidden;
-}
-.main-laboratorio .genomica .genomica-container .img-container img {
-  border-radius: 10px;
-}
-.main-laboratorio .genomica .genomica-container .texto-container {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.main-laboratorio .genomica .genomica-container .texto-container h3 {
-  color: #1A1A1A;
-}
-.main-laboratorio .genomica .genomica-container .texto-container p {
-  padding-left: 25px;
-  padding-right: 25px;
-  text-align: justify;
-  font-family: "Open Sans", sans-serif;
-}
-.main-laboratorio .genomica .genomica-container .texto-container a {
-  font-weight: 400;
+.main-laboratorio .prestaciones {
+  padding-bottom: 11vh;
 }
 .main-laboratorio .prestaciones .list-container ul {
   display: flex;
@@ -516,7 +544,7 @@ header nav ul li a:hover {
   list-style: none;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  padding: 15px;
+  padding: 25px;
 }
 .main-laboratorio .prestaciones .list-container ul li:hover {
   background-color: rgb(230, 0, 79);
@@ -526,21 +554,39 @@ header nav ul li a:hover {
 footer {
   background: #1A1A1A;
   border-top: solid 0.5px #929292;
-  padding: 15px;
+  padding: 25px;
 }
 footer .footer-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: top;
+  align-items: center;
+}
+footer .footer-container .redes {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+footer .footer-container .redes a {
+  text-decoration: none;
+  color: rgb(230, 0, 79);
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
 }
 footer .footer-container .redes a img {
   width: 35px;
+  margin: 5px;
 }
 footer .footer-container .ubicacion .footer-texto {
   font-family: "Roboto", sans-serif;
   color: white;
   font-size: 10px;
+}
+footer .copyright {
+  color: rgb(230, 0, 79);
+  font-family: "Open Sans", sans-serif;
 }
 
 @media screen and (max-width: 767px) {
