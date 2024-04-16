@@ -40,6 +40,8 @@
     }
     .main-productos{
         .card-grande-container{
+            padding-left: 50px;
+            padding-right: 50px;
             .card-grande{
                 display: flex;
                 flex-direction: column;
@@ -52,13 +54,37 @@
                 }
             }
         }
+        .banner-productos{
+            padding-right: 50px;
+            padding-left: 50px;
+            .banner-container{
+                padding-right: 50px;
+                padding-left: 50px;
+            }
+        }
     }
     .main-laboratorio{
-        .genomica{
-            padding: 0px;
-            .genomica-container{
-                @include flex(column, center, center);
-                width:fit-content;
+        .pacientes{
+            .servicio-container{
+                .servicio{
+                    padding-left: 5.5vw;
+                    padding-right: 5.5vw;
+                    .contenido-container{
+                        padding:40px;
+                    }
+                }
+            }
+        }
+        .banner2-labo{
+            padding-top: 5.5vh;
+            padding-bottom: 5.5vh;
+            div{
+                padding-right: 60px;
+                padding-left: 60px;
+                h2{
+                    padding: 15px;
+                    font-size: 20px;
+                }
             }
         }
     }
@@ -68,8 +94,14 @@
             height: auto;
         }
     }
+    .main-contacto{
+        .contacto-banner{
+            align-items: center;
+        }
+    }
     footer{
         .footer-container{
+            @include flex( column, center,center);
             .redes{
                 margin: 1px;
             }
