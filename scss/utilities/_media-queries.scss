@@ -10,13 +10,19 @@
                 flex-direction: column;
                 justify-content: center;
                 padding: 0px;
+                margin-bottom: 16px;
                     li{
+                    height: 25px;
                     margin-top: 3px;
                     margin-bottom: 3px;
+                    display: flex;
                     a{
                         padding: 7px 20px;
                     }
                 }
+            }
+            .buscador-navbar{
+                height: 35px;
             } 
         }     
     }

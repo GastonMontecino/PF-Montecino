@@ -11,14 +11,13 @@ footer{
             @include flex(column, start,start);
             a{
                 text-decoration: none;
-                color: $color-principal;
+                color: white;
                 padding: 10px;
                 font-family: $fuente-secundaria;
                 font-size: 13px;
                 img{
                     width: 35px;
-                    margin: 5px;
-                    
+                    margin: 8px;
                 }
             }
         }

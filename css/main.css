@@ -570,14 +570,14 @@ footer .footer-container .redes {
 }
 footer .footer-container .redes a {
   text-decoration: none;
-  color: rgb(230, 0, 79);
+  color: white;
   padding: 10px;
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
 }
 footer .footer-container .redes a img {
   width: 35px;
-  margin: 5px;
+  margin: 8px;
 }
 footer .footer-container .ubicacion .footer-texto {
   font-family: "Roboto", sans-serif;
@@ -601,13 +601,19 @@ footer .copyright {
     flex-direction: column;
     justify-content: center;
     padding: 0px;
+    margin-bottom: 16px;
   }
   header nav ul li {
+    height: 25px;
     margin-top: 3px;
     margin-bottom: 3px;
+    display: flex;
   }
   header nav ul li a {
     padding: 7px 20px;
+  }
+  header nav .buscador-navbar {
+    height: 35px;
   }
   .main-index .section1-index .pantalla-bienvenida {
     display: flex;
